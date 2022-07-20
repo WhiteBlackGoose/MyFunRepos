@@ -20,7 +20,7 @@ jobs:
     - name: Run generator
       run: |
         mkdir generated && cd generated
-        dotnet run
+        dotnet run --project ../WebsiteGenerator/WebsiteGenerator.fsproj
     
     - name: Push to gh-pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
